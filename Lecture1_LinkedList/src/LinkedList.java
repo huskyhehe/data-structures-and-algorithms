@@ -1,52 +1,39 @@
-public class LinkedList <T> {
+class LinkedList<T> {
+    private var head: Node<T>? = null
+    var length = 0
+        private set
 
-    private Node<T> head;
-    private int length;
-
-    public LinkedList() {
-        this.head = null;
-        this.length = 0;
+    fun addNodeToHead(data: T) {
+        val addNode = Node(data)
+        addNode.next = head
+        head = addNode
+        length++
     }
 
-    public int getLength() {
-        return length;
-    }
-
-
-    public void addNodeToHead(T data) {
-        Node<T> addNode = new Node<>(data);
-        addNode.next = head;
-        head = addNode;
-        length ++;
-    }
-
-
-    public void addNodeToTail(T data) {
-        Node<T> addNode = new Node<>(data);
-
+    fun addNodeToTail(data: T) {
+        val addNode = Node(data)
         if (head == null) {
-            head = addNode;
+            head = addNode
         } else {
-            Node<T> temp = head;
+            var temp: Node<T> = head
             while (temp.next != null) {
-                temp = temp.next;
+                temp = temp.next
             }
-            temp.next = addNode;
+            temp.next = addNode
         }
-        length ++;
+        length++
     }
 
-
-    public void printLinkedList() {
+    fun printLinkedList() {
         if (head == null) {
-            System.out.println("List is empty");
+            println("List is empty")
         } else {
-            Node<T> temp = head;
+            var temp = head
             while (temp != null) {
-                System.out.print(temp.data + " -> ");
-                temp = temp.next;
+                print(temp.data.toString() + " -> ")
+                temp = temp.next
             }
-            System.out.println("NULL");
+            println("NULL")
         }
     }
 }
