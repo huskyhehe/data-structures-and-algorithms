@@ -27,7 +27,8 @@ public class LinkedListCycle141Test {
         Assertions.assertEquals(true, list.hasCycle(head));
     }
 
-    @Test void testHasCycle_no_cycle() {
+    @Test
+    public void testHasCycle_no_cycle() {
         LinkedListCycle141 list = new LinkedListCycle141();
         ListNode head = new ListNode(1);
         Assertions.assertEquals(false, list.hasCycle(head));
