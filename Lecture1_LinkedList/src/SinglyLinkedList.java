@@ -1,9 +1,9 @@
-public class LinkedList <T> {
+public class SinglyLinkedList<T> {
 
     private Node<T> head;
     private int length;
 
-    public LinkedList() {
+    public SinglyLinkedList() {
         this.head = null;
         this.length = 0;
     }
@@ -14,26 +14,26 @@ public class LinkedList <T> {
 
 
     public void addNodeToHead(T data) {
-        Node<T> addNode = new Node<>(data);
-        addNode.next = head;
-        head = addNode;
+        Node<T> newNode = new Node<>(data);
+        newNode.next = head;
+        head = newNode;
         length ++;
     }
 
 
     public void addNodeToTail(T data) {
-        Node<T> addNode = new Node<>(data);
+        Node<T> newNode = new Node<>(data);
 
         if (head == null) {
-            head = addNode;
+            head = newNode;
         } else {
             Node<T> temp = head;
             while (temp.next != null) {
                 temp = temp.next;
             }
-            temp.next = addNode;
-        }
-        length ++;
+            temp.next = newNode;
+            }
+            length ++;
     }
 
 

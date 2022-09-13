@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Integer LinkedList Test Case
-        LinkedList<Integer> list1 = new LinkedList<>();
+        SinglyLinkedList<Integer> list1 = new SinglyLinkedList<>();
         list1.addNodeToHead(5);
         list1.addNodeToHead(6);
         list1.addNodeToHead(4);
@@ -15,7 +15,7 @@ public class Main {
         System.out.println(list1.getLength());
 
         // String LinkedList Test Case
-        LinkedList<String> list2 = new LinkedList<>();
+        SinglyLinkedList<String> list2 = new SinglyLinkedList<>();
         list2.addNodeToTail("ashish");
         list2.addNodeToTail("is");
         list2.addNodeToTail("the");
@@ -27,7 +27,7 @@ public class Main {
         System.out.println(list2.getLength());
 
         // Null LinkedList Test Case
-        LinkedList<Integer> list3 = new LinkedList<>();
+        SinglyLinkedList<Integer> list3 = new SinglyLinkedList<>();
         list3.printLinkedList();
         System.out.println(list3.getLength());
     }
