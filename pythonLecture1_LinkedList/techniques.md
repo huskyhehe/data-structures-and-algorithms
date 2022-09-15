@@ -222,3 +222,16 @@ False
 "List 5 --> 7 --> 5"
 True
 ```
+
+
+Race Car Algorithm Illustration
+The race car algorithm detects cycles in a linked list by simultaneously iterating a fast pointer which moves two nodes at a time and a slow pointer which moves one node at a time. If the linked list has no cycles, then the fast pointer will reach NULL, and the algorithm returns false.
+
+
+![Step_No_Cycle](https://i.imgur.com/3xoVrtS.png)
+![Start_No_Cycle](https://i.imgur.com/zYNHIFP.png)
+
+In the case of a cycle, both pointers will get stuck in the cycle, and the fast pointer will eventually lap the slow pointer. As the fast pointer is lapping the slow pointer, it will eventually either be pointing at the same node as the slow pointer, or be pointing at the slow pointer's previous node. In the latter case, the fast pointer will point at the same node as the slow pointer in the next iteration. When the two pointers point at the same node, the algorithm returns true.
+
+![Start_With_Cycle](https://i.imgur.com/fo0YqIF.png)
+![Step_With_Cycle](https://i.imgur.com/JmLb8qW.png)
