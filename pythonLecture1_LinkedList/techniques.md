@@ -42,7 +42,7 @@ Treating the dummy head with the invariant that it is always pointing to the cur
 
 * <https://web.archive.org/web/20180227180712/http://www.eternallyconfuzzled.com/tuts/datastructures/jsw_tut_linklist.aspx>
 
-
+<br/>
 
 # 2 Multiple Pass Technique
 Most computations on a list will require O(N) time complexity, so a simple but very useful technique is to pass through the list a constant number of times to calculate some summary of the list that will simplify your algorithm. One example that we see a lot is the need to calculate the length of the list. That sounds simple enough, but let's see an example to motivate this technique better.
@@ -144,6 +144,8 @@ The recursive length calculation has three parts to the function:
 
 The recursive algorithm reads more simply because the looping is not explicitly written, i.e., the `while ll` line in the iterative algorithm. Unfortunately for recursion, this is also the major drawback of the recursive algorithm. The looping is implicitly done for you by the execution of your program, namely every successive call to your recursive function places some data on your call stack and then goes to the next function. For most situations, this means you are paying a storage penalty equal to the size of the list. Some languages can get around this with [tail call](https://en.wikipedia.org/wiki/Tail_call) optimization.
 
+<br/>
+
 # 3 Two Pointers Technique
 A very useful technique for dealing with linked lists involves iterating through the list with 2 or more pointers. The differences between how the pointers iterate can be used to make calculations on the list more efficient. This is best demonstrated with an example and probably the most famous example of this technique is cycle detection.
 
@@ -151,7 +153,7 @@ A very useful technique for dealing with linked lists involves iterating through
 Let's use the problem definition of [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle). 
 > Given a linked list, determine if it has a cycle in it. Can you do it with constant extra space?
 
-### Answer: Using extra storage time = O(N), space = O(N)
+**Answer: Using extra storage time = O(N), space = O(N)**
 A cycle can be defined as a list where we point to the same node twice. So the first thing that most people think of is to use another data structure to store nodes that we have already seen as we traverse the list. Then as we move through the nodes of the list we check to see if we have already stored the current node in our auxillary data structure and if we have then we have found a cycle. The typical data structure to choose here is a hash map because it offers constant time insertion and lookup. Here is an acceptable answer:
 
 ```python
@@ -181,7 +183,7 @@ print(f"List {my_list.val} --> {my_list.next.val} --> {my_list.next.next.val}")
 print(has_cycle_with_aux(my_list))
 ```
 
-#### Output:
+**Output:**
 ```python
 "List 5 --> 7 --> None"
 False
@@ -189,7 +191,7 @@ False
 True
 ```
 
-### Answer: Two Pointers, time = O(N) space = O(1)
+**Answer: Two Pointers, time = O(N) space = O(1)**
 We can get rid of the extra auxillary data structure by utilizing only one additional pointer. We can then use the two pointers to iterate through the list at two different speeds. The motivation being that if there is a cycle, then the list can be thought of as a circle (at least the part of the list past the self-intersection). Similar to a race track, the faster pointer must eventually cross paths with the slower pointer, whereas if there is not a cycle they will never cross paths.
 
 ```python

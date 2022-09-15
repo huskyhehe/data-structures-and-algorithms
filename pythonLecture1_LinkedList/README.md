@@ -38,4 +38,4 @@ Best Case occurs when the node is at the head of the list and Worst Case is when
 ## Patterns List
 - [Dummy Head](techniques.md/#1-dummy-head-technique)
 - [Multiple Pass](techniques.md/#2-multiple-pass-technique)
-- [Linked List Two Pointer](techniques.md/#3-two-pointers-technique)
+- [Two Pointer](techniques.md/#3-two-pointers-technique)
