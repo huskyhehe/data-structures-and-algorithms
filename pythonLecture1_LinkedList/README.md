@@ -33,3 +33,9 @@ head.next = ListNode(2)
 - **Worst cases:** Accessing / Searching : O(N) Inserting: O(N) Deleting: O(N)
 
 Best Case occurs when the node is at the head of the list and Worst Case is when the node is at the end of the list.
+
+
+## Patterns List
+- [Dummy Head](techniques.md/#1-dummy-head-technique)
+- [Multiple Pass](techniques.md/#2-multiple-pass-technique)
+- [Linked List Two Pointer](techniques.md/#3-two-pointers-technique)
