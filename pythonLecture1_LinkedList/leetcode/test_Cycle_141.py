@@ -1,12 +1,12 @@
 from unittest import TestCase
 
-from leetcode.Cycle_141 import Solution
+from leetcode.Cycle_141 import Solution141
 from leetcode.ListNode import ListNode
 
 
 class TestSolution(TestCase):
     def setUp(self) -> None:
-        self.solution = Solution()
+        self.solution = Solution141()
 
 
 class TestHasCycle(TestSolution):
