@@ -12,7 +12,7 @@ class Solution237:
 
 if __name__ == "__main__":
 
-    solution237 = Solution237()
+    solution = Solution237()
 
     def printLinkedList(head: ListNode):
         while head:
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     head1.next.next = ListNode(1)
     head1.next.next.next = ListNode(9)
     printLinkedList(head1)
-    solution237.deleteNode(node_to_delete1)
+    solution.deleteNode(node_to_delete1)
     printLinkedList(head1)
 
 
