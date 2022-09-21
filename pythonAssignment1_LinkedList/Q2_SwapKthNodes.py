@@ -3,9 +3,8 @@ from typing import Optional
 from ListNode import ListNode
 
 
-# https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
-
 class Solution2:
+    # https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
     def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
         n = 0
@@ -32,13 +31,11 @@ class Solution2:
 if __name__ == "__main__":
     solution2 = Solution2()
 
-
     def print_linked_list(head: ListNode):
         while head:
             print(str(head.val) + " -> ", end="")
             head = head.next
         print("None")
-
 
     # Test Case 1
     # input: 1 -> 4 -> 3 -> 2 -> 5 -> None, 4
@@ -58,7 +55,7 @@ if __name__ == "__main__":
     print_linked_list(solution2.swapNodes(head2, 2))
 
     # Test Case 3 (Corner Case)
-    # input: 5 -> None
+    # input: 5 -> None, 1
     # output: 5 -> None
     head3 = ListNode(5)
     print_linked_list(solution2.swapNodes(head3, 1))
