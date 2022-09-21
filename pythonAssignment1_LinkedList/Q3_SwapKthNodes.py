@@ -3,7 +3,7 @@ from typing import Optional
 from ListNode import ListNode
 
 
-class Solution2:
+class Solution3:
     # https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
     def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
@@ -29,7 +29,7 @@ class Solution2:
 
 
 if __name__ == "__main__":
-    solution2 = Solution2()
+    solution3 = Solution3()
 
     def print_linked_list(head: ListNode):
         while head:
@@ -45,17 +45,17 @@ if __name__ == "__main__":
     head1.next.next = ListNode(3)
     head1.next.next.next = ListNode(4)
     head1.next.next.next.next = ListNode(5)
-    print_linked_list(solution2.swapNodes(head1, 4))
+    print_linked_list(solution3.swapNodes(head1, 4))
 
     # Test Case 2
     # input: 1 -> 2 -> None, 2
     # output: 2 -> 1 -> None
     head2 = ListNode(1)
     head2.next = ListNode(2)
-    print_linked_list(solution2.swapNodes(head2, 2))
+    print_linked_list(solution3.swapNodes(head2, 2))
 
     # Test Case 3 (Corner Case)
     # input: 5 -> None, 1
     # output: 5 -> None
     head3 = ListNode(5)
-    print_linked_list(solution2.swapNodes(head3, 1))
+    print_linked_list(solution3.swapNodes(head3, 1))
