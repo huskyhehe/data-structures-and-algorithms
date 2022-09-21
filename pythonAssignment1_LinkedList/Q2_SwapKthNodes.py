@@ -1,13 +1,10 @@
 from typing import Optional
 
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from ListNode import ListNode
 
 
 # https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
+
 class Solution2:
     def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
