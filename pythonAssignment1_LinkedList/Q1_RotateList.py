@@ -3,9 +3,8 @@ from typing import Optional
 from ListNode import ListNode
 
 
-# https://leetcode.com/problems/rotate-list
-
 class Solution1:
+    # https://leetcode.com/problems/rotate-list
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
         if not head or not head.next:
@@ -40,7 +39,6 @@ if __name__ == "__main__":
             print(str(head.val) + " -> ", end="")
             head = head.next
         print("None")
-
 
     # Test Case 1
     # input: 1 -> 4 -> 3 -> 2 -> 5 -> None, 2
