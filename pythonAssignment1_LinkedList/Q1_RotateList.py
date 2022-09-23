@@ -41,7 +41,7 @@ if __name__ == "__main__":
         print("None")
 
     # Test Case 1
-    # input: 1 -> 4 -> 3 -> 2 -> 5 -> None, 2
+    # input: 1 -> 2 -> 3 -> 4 -> 5 -> None, 2
     # output: 4 -> 5 -> 1 -> 2 -> 3 -> None
     head1 = ListNode(1)
     head1.next = ListNode(2)
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     head2.next.next = ListNode(9)
     print_linked_list(solution1.rotateRight(head2, 5))
 
-    # Test Case 3 (Corner Case)
+    # Test Case 3 (Edge Case)
     # input: 3 -> None
     # output: 3 -> None
     head3 = ListNode(3)
