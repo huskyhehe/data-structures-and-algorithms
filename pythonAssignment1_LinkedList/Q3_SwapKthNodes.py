@@ -54,7 +54,7 @@ if __name__ == "__main__":
     head2.next = ListNode(2)
     print_linked_list(solution3.swapNodes(head2, 2))
 
-    # Test Case 3 (Corner Case)
+    # Test Case 3 (Edge Case)
     # input: 5 -> None, 1
     # output: 5 -> None
     head3 = ListNode(5)
