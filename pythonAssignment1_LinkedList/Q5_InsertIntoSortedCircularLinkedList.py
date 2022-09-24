@@ -32,3 +32,48 @@ class Solution5:
         new_node.next = cur
 
         return head
+
+
+if __name__ == "__main__":
+    solution5 = Solution5()
+
+    def print_linked_list(head: ListNode):
+        if not head:
+            print("None")
+        print(str(head.val) + " -> ", end="")
+        cur = head.next
+        while cur and cur != head:
+            print(str(cur.val) + " -> ", end="")
+            cur = cur.next
+        print("")
+
+
+    # Test Case 1 (Edge Case)
+    # input: End, 1
+    # output: 1 -> None
+    head1 = None
+    print_linked_list(solution5.insert(head1, 1))
+
+    # Test Case 2 (Edge Case)
+    # input: 1 -> End, 0
+    # output: 1 -> End
+    head2 = ListNode(1)
+    print_linked_list(solution5.insert(head2, 0))
+
+    # Test Case 3
+    # input: 3 -> 4 -> 1 -> None, 2
+    # output: 1 -> End
+    head3 = ListNode(3)
+    head3.next = ListNode(4)
+    head3.next.next = ListNode(1)
+    head3.next.next.next = head3
+    print_linked_list(solution5.insert(head3, 2))
+
+    # Test Case 4
+    # input: 3 -> 4 -> 1 -> None, 7
+    # output: 1 -> End
+    head4 = ListNode(3)
+    head4.next = ListNode(4)
+    head4.next.next = ListNode(1)
+    head4.next.next.next = head4
+    print_linked_list(solution5.insert(head4, 7))
