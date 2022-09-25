@@ -1,5 +1,9 @@
 //https://leetcode.com/problems/rotate-list/
 
+// linked list traversal
+// Time: O(n)
+// Space: O(1)
+
 import model.ListNode;
 
 public class Solution1 {
