@@ -39,23 +39,23 @@ if __name__ == "__main__":
 
     # Test Case 1
     # input: 1 -> 4 -> 3 -> 2 -> 5 -> None, 4
-    # output: 1 -> 2 -> 3 -> 4 -> 5 -> None
     head1 = ListNode(1)
     head1.next = ListNode(2)
     head1.next.next = ListNode(3)
     head1.next.next.next = ListNode(4)
     head1.next.next.next.next = ListNode(5)
+    # output: 1 -> 2 -> 3 -> 4 -> 5 -> None
     print_linked_list(solution3.swapNodes(head1, 4))
 
     # Test Case 2
     # input: 1 -> 2 -> None, 2
-    # output: 2 -> 1 -> None
     head2 = ListNode(1)
     head2.next = ListNode(2)
+    # output: 2 -> 1 -> None
     print_linked_list(solution3.swapNodes(head2, 2))
 
     # Test Case 3 (Edge Case)
     # input: 5 -> None, 1
-    # output: 5 -> None
     head3 = ListNode(5)
+    # output: 5 -> None
     print_linked_list(solution3.swapNodes(head3, 1))
