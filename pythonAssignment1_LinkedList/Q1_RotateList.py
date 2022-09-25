@@ -1,10 +1,11 @@
+# https://leetcode.com/problems/rotate-list
+
 from typing import Optional
 
 from ListNode import ListNode
 
 
 class Solution1:
-    # https://leetcode.com/problems/rotate-list
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
         if not head or not head.next:
