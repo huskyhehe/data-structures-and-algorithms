@@ -1,10 +1,11 @@
+# https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
+
 from typing import Optional
 
 from ListNode import ListNode
 
 
 class Solution3:
-    # https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
     def swapNodes(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
 
         n = 0
