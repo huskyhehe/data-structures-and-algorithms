@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/remove-linked-list-elements
 
+// linked list traversal + dummy head + two pointers
+// Time: O(n)
+// Space: O(1)
+
 import model.ListNode;
 
 public class Solution2 {
