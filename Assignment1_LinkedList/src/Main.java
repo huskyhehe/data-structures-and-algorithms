@@ -6,7 +6,7 @@ public class Main {
          * Question 1: Rotate List
          */
         Solution1 solution1 = new Solution1();
-        System.out.println("---------- Q1 Rotate List ----------");
+        System.out.println("------------ Q1 Rotate List ------------");
 
          // Test Case 1
          // input: 1 -> 2 -> 3 -> 4 -> 5 -> null, 2
@@ -37,7 +37,7 @@ public class Main {
          * Question 2: Remove Elements
          */
         Solution2 solution2 = new Solution2();
-        System.out.println("-------- Q2 Remove Elements --------");
+        System.out.println("---------- Q2 Remove Elements ----------");
 
         // Test Case 1
         // input: 1 -> 2 -> 6 -> 3 -> 6 -> null, 6
@@ -67,7 +67,7 @@ public class Main {
          * Question 3: Swap Kth Nodes
          */
         Solution3 solution3 = new Solution3();
-        System.out.println("-------- Q3 Swap Kth Nodes ---------");
+        System.out.println("---------- Q3 Swap Kth Nodes -----------");
 
         // Test Case 1
         // input: 1 -> 4 -> 3 -> 2 -> 5 -> null, 4
@@ -86,7 +86,7 @@ public class Main {
         // expected output: 2 -> 1 -> null
         printSinglyLinkedList(solution3.swapNodes(solution3Head2, 2));
 
-        // Test Case 3 (Edge 3)
+        // Test Case 3 (Edge Case)
         // input: 5 -> null, 1
         ListNode solution3Head3 = new ListNode(5);
         // expected output: 5 -> null
