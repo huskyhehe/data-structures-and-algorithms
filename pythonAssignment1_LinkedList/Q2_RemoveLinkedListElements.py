@@ -61,4 +61,4 @@ if __name__ == "__main__":
     # input: None, 1
     # output: None
     head3 = None
-    print_linked_list(solution2.removeElements(head2, 1))
+    print_linked_list(solution2.removeElements(head3, 1))
