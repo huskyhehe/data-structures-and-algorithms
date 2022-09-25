@@ -1,10 +1,11 @@
+# https://leetcode.com/problems/remove-linked-list-elements
+
 from typing import Optional
 
 from ListNode import ListNode
 
 
 class Solution2:
-    # https://leetcode.com/problems/remove-linked-list-elements
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
 
         if not head:
