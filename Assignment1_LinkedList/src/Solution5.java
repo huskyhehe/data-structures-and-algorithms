@@ -1,5 +1,9 @@
 // https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/
 
+// circular linked list traversal: while (cur != head)
+// time: O(n)
+// space: O(1)
+
 import model.ListNode;
 
 public class Solution5 {
