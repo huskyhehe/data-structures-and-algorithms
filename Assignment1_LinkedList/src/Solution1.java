@@ -4,6 +4,7 @@ import model.ListNode;
 
 public class Solution1 {
     public ListNode rotateRight(ListNode head, int k) {
+
         if (head == null || head.next == null) return head;
 
         int n = 1;
@@ -23,5 +24,4 @@ public class Solution1 {
 
         return newHead;
     }
-
 }
