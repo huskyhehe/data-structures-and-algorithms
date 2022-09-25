@@ -49,6 +49,19 @@ public class Main {
         // expected output: 1 - > 2 - > 3 - > null
         printSinglyLinkedList(solution2.removeElements(solution2Head1, 6));
 
+        // Test Case 2
+        // input: 7 -> 7 -> 7 -> null, 7
+        ListNode solution2Head2 = new ListNode(7);
+        solution2Head2.next = new ListNode(7);
+        solution2Head2.next.next = new ListNode(7);
+        // expected output: null
+        printSinglyLinkedList(solution2.removeElements(solution2Head2, 7));
+
+        // Test Case 3 (Edge Case)
+        // input: null, 1
+        // expected output: null
+        printSinglyLinkedList(solution2.removeElements(null, 1));
+
 
         /**
          * Question 3: Swap Kth Nodes
