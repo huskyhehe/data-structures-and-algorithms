@@ -1,10 +1,11 @@
+# https://leetcode.com/problems/split-linked-list-in-parts/
+
 from typing import Optional, List
 
 from ListNode import ListNode
 
 
 class Solution4:
-    # https://leetcode.com/problems/split-linked-list-in-parts/
     def splitListToParts(self, head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:
 
         n = 0
@@ -56,8 +57,8 @@ if __name__ == "__main__":
     # input: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> None
     head1 = ListNode(1)
     cur = head1
-    for i in range(9):
-        cur.next = ListNode(i + 2)
+    for i in range(2, 11):
+        cur.next = ListNode(i)
         cur = cur.next
     # expected output: ['1 -> 2 -> 3 -> 4 -> None', '5 -> 6 -> 7 -> None', '8 -> 9 -> 10 -> None']
     print_a_list_of_linkedlist(solution4.splitListToParts(head1, 3))
