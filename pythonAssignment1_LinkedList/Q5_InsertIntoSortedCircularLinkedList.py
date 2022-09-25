@@ -34,6 +34,10 @@ class Solution5:
 
         return head
 
+    # linked list traversal
+    # time: O(n)
+    # space: O(1)
+
 
 if __name__ == "__main__":
     solution5 = Solution5()
