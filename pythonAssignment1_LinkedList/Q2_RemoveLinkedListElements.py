@@ -40,7 +40,7 @@ if __name__ == "__main__":
         print("None")
 
     # Test Case 1
-    # 1 -> 2 -> 6 -> 3 -> 6 -> None, 6
+    # input: 1 -> 2 -> 6 -> 3 -> 6 -> None, 6
     # output: 1 -> 2 -> 3 -> None
     head1 = ListNode(1)
     head1.next = ListNode(2)

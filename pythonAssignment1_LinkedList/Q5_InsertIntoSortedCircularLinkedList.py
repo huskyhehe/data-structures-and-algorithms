@@ -4,6 +4,7 @@ from ListNode import ListNode
 
 
 class Solution5:
+    # https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list/
     def insert(self, head: Optional[ListNode], insertVal: int) -> ListNode:
 
         new_node = ListNode(insertVal)
@@ -49,19 +50,19 @@ if __name__ == "__main__":
 
 
     # Test Case 1 (Edge Case)
-    # input: End, 1
-    # output: 1 -> None
+    # input: None, 1
+    # output: 1 ->
     head1 = None
     print_linked_list(solution5.insert(head1, 1))
 
     # Test Case 2 (Edge Case)
-    # input: 1 -> End, 0
-    # output: 1 -> End
+    # input: 1 ->, 0
+    # output: 1 ->
     head2 = ListNode(1)
     print_linked_list(solution5.insert(head2, 0))
 
     # Test Case 3
-    # input: 3 -> 4 -> 1 -> None, 2
+    # input: 3 -> 4 -> 1 ->, 2
     # output: 1 -> End
     head3 = ListNode(3)
     head3.next = ListNode(4)
@@ -70,8 +71,8 @@ if __name__ == "__main__":
     print_linked_list(solution5.insert(head3, 2))
 
     # Test Case 4
-    # input: 3 -> 4 -> 1 -> None, 7
-    # output: 1 -> End
+    # input: 3 -> 4 -> 1 ->, 7
+    # output: 1 ->
     head4 = ListNode(3)
     head4.next = ListNode(4)
     head4.next.next = ListNode(1)
