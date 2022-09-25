@@ -34,7 +34,7 @@ class Solution5:
 
         return head
 
-    # two pointers + linked list traversal
+    # two pointers + circular linked list traversal
     # time: O(n)
     # space: O(1)
 
