@@ -1,5 +1,6 @@
 # Problems Covered in Lectures
-
+## Lecture 1+2: LinkedList
+- [GFG. Nth node from end of linked list](https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1)
 
 ## Lecture 4: Binary Tree
 ### Basic Traversal
