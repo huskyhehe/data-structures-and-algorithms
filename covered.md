@@ -4,20 +4,32 @@
 
 ## Lecture 4: Binary Tree
 ### Basic Traversal
-- [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
-- [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal)
-- [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal)
+- [x] [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+- [x] [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+- [x] [145. Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/)
+- [] [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+- [] [889. Construct Binary Tree from Preorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/)
+- [] [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
 ### Depth, Height, Diameter
-- [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)
-- [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)
-- []
+- [x] [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+- [] [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
 
-### Transform
-- [226. Invert Binary Tree]
-- [Mirror ]
+### Advanced Traversal
+- [] [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+- [] [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+- [] [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
+- [] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+- [] [Left View of a Binary Tree](https://www.interviewbit.com/blog/left-view-of-a-binary-tree/)
+- [] [Top view of Binary Tree](https://www.interviewbit.com/blog/top-view-of-binary-tree/)
+- [] [Bottom View of Binary Tree](https://www.interviewbit.com/blog/bottom-view-of-binary-tree/)
+- [] [545. Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)
+
 
 ### Node Val Validation
-- [100. Same Tree]
-- [103. Symmetric Tree]
+- [] [Mirror Binary Tree Nodes](https://www.educative.io/m/mirror-binary-tree-nodes)
+- [] [100. Same Tree](https://leetcode.com/problems/same-tree/)
+- [] [103. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
+- [] [226. Invert Binary Tree]
+
 
