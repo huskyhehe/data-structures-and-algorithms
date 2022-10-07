@@ -1,30 +1,32 @@
-from typing import Optional
+import collections
+from typing import Optional, List
 
 from BinaryTree import TreeNode
 
 
-def preorder_traversal(root: Optional[TreeNode]):
+def level_order(root: Optional[TreeNode]) -> List[List[int]]:
     if not root:
-        return
-    print(root.val, end=" -> ")
-    preorder_traversal(root.left)
-    preorder_traversal(root.right)
+        return []
 
+    res = []
+    queue = collections.deque()
+    queue.append(root)
 
-def inorder_traversal(root: Optional[TreeNode]):
-    if not root:
-        return
-    inorder_traversal(root.left)
-    print(root.val, end=" -> ")
-    inorder_traversal(root.right)
+    while queue:
+        level_size = len(queue)
+        level = []
 
+        for _ in range(level_size):
+            cur_node = queue.popleft()
+            level.append(cur_node.val)
 
-def postorder_traversal(root: Optional[TreeNode]):
-    if not root:
-        return
-    inorder_traversal(root.left)
-    inorder_traversal(root.right)
-    print(root.val, end=" -> ")
+            if cur_node.left:
+                queue.append(cur_node.left)
+            if cur_node.right:
+                queue.append(cur_node.right)
+
+        res.append(level)
+    return res
 
 
 if __name__ == "__main__":
@@ -58,16 +60,6 @@ if __name__ == "__main__":
                             \ 
                              5
     '''
-    print("Inorder")
-    inorder_traversal(root1)
-    print("\nPreorder")
-    preorder_traversal(root1)
-    print("\nPostorder")
-    postorder_traversal(root1)
+    print(level_order(root1))
+    print(level_order(root2))
 
-    print("\nInorder")
-    inorder_traversal(root2)
-    print("\nPreorder")
-    preorder_traversal(root2)
-    print("\nPostorder")
-    postorder_traversal(root2)

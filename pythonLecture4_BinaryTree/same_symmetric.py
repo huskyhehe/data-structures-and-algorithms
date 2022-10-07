@@ -1,6 +1,6 @@
 from typing import Optional
 
-from BinaryTree import TreeNode, BinaryTree
+from BinaryTree import TreeNode
 
 
 def is_same_tree(p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
@@ -32,7 +32,6 @@ def mirror_tree(root: Optional[TreeNode]):
 
 if __name__ == "__main__":
     root1 = TreeNode(1)
-    tree1 = BinaryTree(root1)
     root1.left = TreeNode(2)
     root1.right = TreeNode(2)
     root1.left.left = TreeNode(3)

@@ -1,6 +1,6 @@
 from typing import Optional
 
-from BinaryTree import TreeNode, BinaryTree
+from BinaryTree import TreeNode
 
 
 def get_size(root: Optional[TreeNode]):
@@ -36,12 +36,17 @@ def get_min_depth(root: Optional[TreeNode]):
     return min(left_depth, right_depth) + 1
 
 
+# the length of the longest path between any two nodes in a tree.
+# This path may or may not pass through the root.
+# The length of a path between two nodes is represented by the number of edges between them.
 # def get_diameter(root: Optional[TreeNode]):
+
+
 # def get_path_sum(root: Optional[TreeNode]):
+
 
 if __name__ == "__main__":
     root1 = TreeNode(1)
-    tree1 = BinaryTree(root1)
     root1.left = TreeNode(2)
     root1.right = TreeNode(3)
     root1.left.left = TreeNode(4)
@@ -59,7 +64,6 @@ if __name__ == "__main__":
                 8
     '''
     root2 = TreeNode(2)
-    tree2 = BinaryTree(root2)
     root2.right = TreeNode(3)
     root2.right.left = TreeNode(4)
     root2.right.left.right = TreeNode(5)
