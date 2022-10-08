@@ -1,6 +1,9 @@
 # Problems Covered in Lectures
 ## Lecture 1+2: LinkedList
-- [GFG. Nth node from end of linked list](https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1)
+- [Nth node from end of linked list](https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1)
+
+## Lecture 3: Sorting
+
 
 ## Lecture 4: Binary Tree
 ### Basic Traversal (DFS)
@@ -20,15 +23,16 @@
 ### Advanced Traversal (BFS)
 - [x] [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
 - [x] [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
-- [ ] [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
-- [ ] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
-- [ ] [Left View of a Binary Tree](https://www.interviewbit.com/blog/left-view-of-a-binary-tree/)
-- [ ] [Top view of Binary Tree](https://www.interviewbit.com/blog/top-view-of-binary-tree/)
+- [x] [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
+- [x] [Left View of a Binary Tree](https://www.geeksforgeeks.org/print-left-view-binary-tree/)
+- [x] [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
+- [ ] [Top view of Binary Tree](https://www.geeksforgeeks.org/print-nodes-top-view-binary-tree/)
 - [ ] [Bottom View of Binary Tree](https://www.interviewbit.com/blog/bottom-view-of-binary-tree/)
 - [ ] [545. Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/)
 
 
-### Same, Symmetric, 
+
+### Same, Symmetric, mirror
 - [x] [100. Same Tree](https://leetcode.com/problems/same-tree/)
 - [x] [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree/)
 - [x] [Mirror Binary Tree Nodes](https://www.educative.io/m/mirror-binary-tree-nodes)
