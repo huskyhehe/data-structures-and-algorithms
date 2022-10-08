@@ -17,9 +17,8 @@ def is_symmetric(root: Optional[TreeNode]) -> bool:
             return True
         if not node1 or not node2:
             return False
-        return node1.val == node2.val \
-               and is_mirrored(node1.left, node2.right) \
-               and is_mirrored(node1.right, node2.left)
+        return node1.val == node2.val and is_mirrored(node1.left, node2.right) and is_mirrored(node1.right, node2.left)
+    return is_mirrored(root, root)
 
 
 def mirror_tree(root: Optional[TreeNode]):
@@ -28,6 +27,18 @@ def mirror_tree(root: Optional[TreeNode]):
     mirror_tree(root.left)
     mirror_tree(root.right)
     root.left, root.right = root.right, root.left
+
+
+def invert_tree(root: Optional[TreeNode]) -> Optional[TreeNode]:
+    if not root:
+        return None
+
+    left = invert_tree(root.left)
+    right = invert_tree(root.right)
+    root.left = right
+    root.right = left
+
+    return root
 
 
 if __name__ == "__main__":
@@ -45,9 +56,20 @@ if __name__ == "__main__":
                     /   \     /   \
                    3    4     4    3
     '''
-
     root4 = TreeNode(1)
     root4.left = TreeNode(2)
     root4.right = TreeNode(3)
     root4.left.left = TreeNode(4)
     root4.left.right = TreeNode(5)
+    '''
+                           1
+                        /     \
+                      2         3
+                    /   \   
+                   4    5         
+    '''
+
+    print(is_symmetric(root1))
+    print(is_symmetric(root4))
+    invert_tree(root4)
+    root4.print_level_order()
