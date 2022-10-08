@@ -37,26 +37,26 @@ if __name__ == "__main__":
     root1.right.right = TreeNode(7)
     root1.left.left.left = TreeNode(8)
     '''
-                           1
-                        /     \
-                      2         3
-                    /   \     /   \
-                   4    5     6    7
-                 /
-                8
+                       1
+                    /     \
+                  2         3
+                /   \     /   \
+               4    5     6    7
+             /
+            8
     '''
     root2 = TreeNode(2)
     root2.right = TreeNode(3)
     root2.right.left = TreeNode(4)
     root2.right.left.right = TreeNode(5)
     '''
-                           2
-                            \
-                             3
-                            /   
-                           4
-                            \ 
-                             5
+                   2
+                    \
+                     3
+                    /   
+                   4
+                    \ 
+                     5
     '''
     print("Inorder")
     inorder_traversal(root1)

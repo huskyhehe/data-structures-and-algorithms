@@ -33,10 +33,7 @@ def invert_tree(root: Optional[TreeNode]) -> Optional[TreeNode]:
     if not root:
         return None
 
-    left = invert_tree(root.left)
-    right = invert_tree(root.right)
-    root.left = right
-    root.right = left
+    root.left, root.right = invert_tree(root.right), invert_tree(root.left)
 
     return root
 
@@ -50,11 +47,11 @@ if __name__ == "__main__":
     root1.right.left = TreeNode(4)
     root1.right.right = TreeNode(3)
     '''
-                           1
-                        /     \
-                      2         2
-                    /   \     /   \
-                   3    4     4    3
+                   1
+                /     \
+              2         2
+            /   \     /   \
+           3    4     4    3
     '''
     root4 = TreeNode(1)
     root4.left = TreeNode(2)
@@ -62,11 +59,11 @@ if __name__ == "__main__":
     root4.left.left = TreeNode(4)
     root4.left.right = TreeNode(5)
     '''
-                           1
-                        /     \
-                      2         3
-                    /   \   
-                   4    5         
+                   1
+                /     \
+              2         3
+            /   \   
+           4    5         
     '''
 
     print(is_symmetric(root1))

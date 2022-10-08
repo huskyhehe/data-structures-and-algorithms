@@ -51,11 +51,11 @@ if __name__ == "__main__":
     inorder1 = [9, 3, 15, 20, 7]
     postorder1 = [9, 15, 7, 20, 3]
     '''
-                           3
-                        /     \
-                      9        20
-                              /   \
-                             15    7
+               3
+            /     \
+          9        20
+                  /   \
+                 15    7
     '''
     root1 = build_tree_from_pre_in(preorder1, inorder1)
     root1.print_level_order()
