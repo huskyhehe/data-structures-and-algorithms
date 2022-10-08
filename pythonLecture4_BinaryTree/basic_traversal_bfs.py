@@ -29,6 +29,38 @@ def level_order(root: Optional[TreeNode]) -> List[List[int]]:
     return res
 
 
+def zigzag_level_order(root: Optional[TreeNode]) -> List[List[int]]:
+    if not root:
+        return []
+
+    res = []
+    queue = collections.deque()
+    queue.append(root)
+    left_to_right = True
+
+    while queue:
+        level_size = len(queue)
+        level = collections.deque()
+
+        for _ in range(level_size):
+            cur_node = queue.popleft()
+
+            if left_to_right:
+                level.append(cur_node.val)
+            else:
+                level.appendleft(cur_node.val)
+
+            if cur_node.left:
+                queue.append(cur_node.left)
+            if cur_node.right:
+                queue.append(cur_node.right)
+
+        res.append(list(level))
+        left_to_right = not left_to_right
+
+    return res
+
+
 if __name__ == "__main__":
     root1 = TreeNode(1)
     root1.left = TreeNode(2)
@@ -62,4 +94,6 @@ if __name__ == "__main__":
     '''
     print(level_order(root1))
     print(level_order(root2))
+    print(zigzag_level_order(root1))
+    print(zigzag_level_order(root2))
 
