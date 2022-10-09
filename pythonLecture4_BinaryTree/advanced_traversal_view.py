@@ -58,6 +58,56 @@ def right_side_view_bfs(root: Optional[TreeNode]) -> List[int]:
     return res
 
 
+# bfs + hash
+def left_side_view_bfs_hash(root: Optional[TreeNode]) -> List[int]:
+    if not root:
+        return []
+
+    leftmost_value_in_depth = dict()
+    queue = collections.deque()
+    queue.append((root, 0))
+    max_depth = 0
+
+    while queue:
+        size = len(queue)
+        for _ in range(size):
+            node, depth = queue.popleft()
+            max_depth = max(max_depth, depth)
+            leftmost_value_in_depth[depth] = node.val
+
+            if node.right:
+                queue.append((node.right, depth + 1))
+            if node.left:
+                queue.append((node.left, depth + 1))
+
+    return [leftmost_value_in_depth[depth] for depth in range(max_depth + 1)]
+
+
+# bfs + hash
+def right_side_view_bfs_hash(root: Optional[TreeNode]) -> List[int]:
+    if not root:
+        return []
+
+    rightmost_value_in_depth = dict()
+    queue = collections.deque()
+    queue.append((root, 0))
+    max_depth = 0
+
+    while queue:
+        size = len(queue)
+        for _ in range(size):
+            node, depth = queue.popleft()
+            max_depth = max(max_depth, depth)
+            rightmost_value_in_depth[depth] = node.val
+
+            if node.left:
+                queue.append((node.left, depth + 1))
+            if node.right:
+                queue.append((node.right, depth + 1))
+
+    return [rightmost_value_in_depth[depth] for depth in range(max_depth + 1)]
+
+
 def left_side_view_dfs(root: Optional[TreeNode]) -> List[int]:
     if not root:
         return []
@@ -83,14 +133,14 @@ def right_side_view_dfs(root: Optional[TreeNode]) -> List[int]:
 
     right_side = []
 
-    def dfs(node, level: int) -> None:
-        if level == len(right_side):
+    def dfs(node, depth: int) -> None:
+        if depth == len(right_side):
             right_side.append(node.val)
 
         if node.right:
-            dfs(node.right, level + 1)
+            dfs(node.right, depth + 1)
         if node.left:
-            dfs(node.left, level + 1)
+            dfs(node.left, depth + 1)
 
     dfs(root, 0)
     return right_side
@@ -146,7 +196,11 @@ if __name__ == "__main__":
          4    0 1     7
     '''
     print(left_side_view_bfs(root1))
+    print(left_side_view_bfs_hash(root1))
     print(left_side_view_dfs(root1))
+
     print(right_side_view_bfs(root1))
+    print(right_side_view_bfs_hash(root1))
     print(right_side_view_dfs(root1))
+
     print(vertical_order(root1))

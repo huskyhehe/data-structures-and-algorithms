@@ -3,7 +3,7 @@ from typing import Optional
 from BinaryTree import TreeNode
 
 
-def get_size(root: Optional[TreeNode]):
+def get_size(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
     return 1 + get_size(root.left) + get_size(root.right)
@@ -12,7 +12,7 @@ def get_size(root: Optional[TreeNode]):
 # A binary tree's maximum depth (= height) is the number of nodes
 # along the longest path from the root node down to the farthest leaf node.
 
-def get_max_depth(root: Optional[TreeNode]):
+def get_max_depth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
     left_depth = get_max_depth(root.left)
@@ -23,7 +23,7 @@ def get_max_depth(root: Optional[TreeNode]):
 # The minimum depth is the number of nodes
 # along the shortest path from the root node down to the nearest leaf node.
 
-def get_min_depth(root: Optional[TreeNode]):
+def get_min_depth(root: Optional[TreeNode]) -> int:
     if not root:
         return 0
     left_depth = get_min_depth(root.left)
@@ -39,7 +39,24 @@ def get_min_depth(root: Optional[TreeNode]):
 # the length of the longest path between any two nodes in a tree.
 # This path may or may not pass through the root.
 # The length of a path between two nodes is represented by the number of edges between them.
-# def get_diameter(root: Optional[TreeNode]):
+def get_diameter(root: Optional[TreeNode]):
+    diameter = 0
+
+    def get_node_max_depth(node: Optional[TreeNode]) -> int:
+        if not node:
+            return 0
+        # recursively find the longest path in both left child and right child
+        left_depth = get_node_max_depth(node.left)
+        right_depth = get_node_max_depth(node.right)
+
+        # update the diameter if left_path plus right_path is larger
+        nonlocal diameter
+        diameter = max(diameter, left_depth + right_depth)
+
+        return max(left_depth, right_depth) + 1
+
+    get_node_max_depth(root)
+    return diameter
 
 
 # def get_path_sum(root: Optional[TreeNode]):
@@ -82,6 +99,8 @@ if __name__ == "__main__":
     print(get_max_depth(root1))
     print("min depth:")
     print(get_min_depth(root1))
+    print("diameter:")
+    print(get_diameter(root1))
 
     print("size: ")
     print(get_size(root2))
@@ -89,3 +108,5 @@ if __name__ == "__main__":
     print(get_max_depth(root2))
     print("min depth:")
     print(get_min_depth(root2))
+    print("diameter:")
+    print(get_diameter(root2))
