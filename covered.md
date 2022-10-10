@@ -25,7 +25,7 @@
 - [x] [169. Majority Element](https://leetcode.com/problems/majority-element/): Boyer Moore Voting Algorithm
 - [x] [344. Reverse String](https://leetcode.com/problems/reverse-string/)
 - [x] [189. Rotate Array](https://leetcode.com/problems/rotate-array/): reverse all and reverse subarray
-- [ ] [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/): iteration, recursive
+- [x] [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/): two pointers + reverse order traversal
 
 <br>
 
