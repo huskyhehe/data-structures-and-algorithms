@@ -2,8 +2,32 @@
 ## Lecture 1+2: LinkedList
 - [Nth node from end of linked list](https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1)
 
-## Lecture 3: Sorting
+<br>
 
+## Lecture 3: Sort & Search
+
+### 1 Comparison Based Sorts: O(N²)
+- [ ] Bubble Sort
+- [ ] Selection Sort
+- [ ] Insertion Sort
+
+### 2 Sorts: O(N * logN)
+- [ ] Merge Sort
+- [ ] Quick Sort
+- [ ] Count Sort
+
+### 2 Searching
+- [ ] [704. Binary Search](https://leetcode.com/problems/binary-search/): iteration, recursive
+
+### sorting
+- [x] [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+- [ ] [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
+- [x] [169. Majority Element](https://leetcode.com/problems/majority-element/): Boyer Moore Voting Algorithm
+- [x] [344. Reverse String](https://leetcode.com/problems/reverse-string/)
+- [x] [189. Rotate Array](https://leetcode.com/problems/rotate-array/): reverse all and reverse subarray
+- [ ] [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/): iteration, recursive
+
+<br>
 
 ## Lecture 4: Binary Tree
 ### 1 Basic Traversal (DFS)
