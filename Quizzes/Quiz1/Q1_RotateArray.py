@@ -6,7 +6,7 @@ class Solution1:
         n = len(nums)
         k %= n
 
-        def reverse(arr: List[int], start: int, end: int):
+        def reverse(arr: List[int], start: int, end: int) -> None:
             while start < end:
                 arr[start], arr[end] = arr[end], arr[start]
                 start += 1
