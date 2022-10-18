@@ -36,6 +36,7 @@ class Solution4:
                 if node.right:
                     queue.append(node.right)
             res.append(list(level))
+            left_to_right = not left_to_right
         return res
 
 
@@ -55,5 +56,5 @@ if __name__ == "__main__":
     root1.right = TreeNode(20)
     root1.right.left = TreeNode(15)
     root1.right.right = TreeNode(7)
-    # expected output: [[3], [9, 20], [15, 7]]
+    # expected output: [[3], [20, 9], [15, 7]]
     print(solution4.zigzagLevelOrder(root1))
