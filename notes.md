@@ -1,9 +1,9 @@
 # Python techniques
 
 ### Shallow Copy
-cur = ls.copy() is equal to cur = ls[:]
+`cur = ls.copy()` is equal to `cur = ls[:]`
 
-
+<br>
 
 ## Singly LinkedList
 ### dummy head
