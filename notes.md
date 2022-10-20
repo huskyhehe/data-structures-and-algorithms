@@ -1,4 +1,10 @@
-# LinkedList
+# Python techniques
+
+### Shallow Copy
+cur = ls.copy() is equal to cur = ls[:]
+
+
+
 ## Singly LinkedList
 ### dummy head
 - [x] [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
