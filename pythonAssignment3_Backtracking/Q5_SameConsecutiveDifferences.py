@@ -9,7 +9,6 @@ from typing import List
 
 class Solution5:
     def numsSameConsecDiff(self, N: int, K: int) -> List[int]:
-
         if N == 1:
             return [i for i in range(10)]
 
