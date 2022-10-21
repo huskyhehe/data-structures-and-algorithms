@@ -15,7 +15,7 @@ class Solution5:
 
         res = []
 
-        def dfs(start, num):
+        def dfs(start: int, num: int) -> None:
             if start == 0:
                 return res.append(num)
 
