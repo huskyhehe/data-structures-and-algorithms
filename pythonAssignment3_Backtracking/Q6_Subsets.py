@@ -13,7 +13,7 @@ class Solution6:
 
         def backtracking(start: int, subset: List[int]):
             if len(subset) <= n:
-                res.append(subset.copy())
+                res.append(subset[:])
 
             for i in range(start, n):
                 subset.append(nums[i])
