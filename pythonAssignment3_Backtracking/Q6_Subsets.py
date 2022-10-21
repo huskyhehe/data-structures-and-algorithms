@@ -11,16 +11,16 @@ class Solution6:
         res = []
         n = len(nums)
 
-        def backtracking(start: int, subset: List[int]):
+        def backtrack(start: int, subset: List[int]) -> None:
             if len(subset) <= n:
                 res.append(subset[:])
 
             for i in range(start, n):
                 subset.append(nums[i])
-                backtracking(i + 1, subset)
+                backtrack(i + 1, subset)
                 subset.pop()
 
-        backtracking(0, [])
+        backtrack(0, [])
         return res
 
 
