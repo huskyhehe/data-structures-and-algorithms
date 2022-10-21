@@ -8,7 +8,6 @@ from typing import List
 
 class Solution7:
     def generateParenthesis(self, n: int) -> List[str]:
-
         res = []
 
         def backtrack(left: int, right: int, comb: List[str]) -> None:
