@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/combination-sum/
 
-# time: O( n ^ (t/m + 1))       t = target, n = len(candidates)
+# time: O( n ^ (t/m + 1))       t = target, n = len(candidates), m = min(candidates)
 # space: O(t/m)
 
 from typing import List
