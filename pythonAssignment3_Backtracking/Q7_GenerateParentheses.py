@@ -1,7 +1,7 @@
 # https://leetcode.com/problems/generate-parentheses/
 
-# time:
-# space:
+# time: O(4^n / n)
+# space: O(4^n / n)
 
 from typing import List
 
