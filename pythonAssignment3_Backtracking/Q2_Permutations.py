@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/permutations/
 
-# time: O(n×n!)
+# time: O(n * n!)
 # space: O(n)
 
 from typing import List
