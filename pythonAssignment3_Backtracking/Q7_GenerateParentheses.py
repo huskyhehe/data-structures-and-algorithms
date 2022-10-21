@@ -11,20 +11,20 @@ class Solution7:
 
         res = []
 
-        def backtracking(left: int, right: int, combo: List[str]):
-            if len(combo) == n * 2:
-                res.append("".join(combo))
+        def backtracking(left: int, right: int, comb: List[str]):
+            if len(comb) == n * 2:
+                res.append("".join(comb))
                 return
 
             if left < n:
-                combo.append("(")
-                backtracking(left + 1, right, combo)
-                combo.pop()
+                comb.append("(")
+                backtracking(left + 1, right, comb)
+                comb.pop()
 
             if left > right:
-                combo.append(")")
-                backtracking(left, right + 1, combo)
-                combo.pop()
+                comb.append(")")
+                backtracking(left, right + 1, comb)
+                comb.pop()
 
         backtracking(0, 0, [])
         return res
