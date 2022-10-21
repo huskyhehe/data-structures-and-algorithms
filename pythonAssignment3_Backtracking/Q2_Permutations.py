@@ -11,13 +11,13 @@ class Solution2:
         res = []
         n = len(nums)
 
-        def backtracking(start: int):
+        def backtrack(start: int) -> None:
             if start == n:
                 res.append(nums[:])
             for i in range(start, n):
                 nums[start], nums[i] = nums[i], nums[start]
-                backtracking(start + 1)
+                backtrack(start + 1)
                 nums[start], nums[i] = nums[i], nums[start]
 
-        backtracking(0)
+        backtrack(0)
         return res
