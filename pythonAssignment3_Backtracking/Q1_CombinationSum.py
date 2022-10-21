@@ -12,7 +12,7 @@ class Solution1:
 
         def backtracking(start: int, remain: int, comb: List[int]) -> None:
             if remain == 0:
-                res.append(comb.copy())
+                res.append(comb[:])
                 return
 
             if remain <= 0:
