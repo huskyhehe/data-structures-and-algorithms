@@ -13,7 +13,7 @@ class Solution2:
 
         def backtracking(start: int):
             if start == n:
-                res.append(nums.copy())
+                res.append(nums[:])
             for i in range(start, n):
                 nums[start], nums[i] = nums[i], nums[start]
                 backtracking(start + 1)
