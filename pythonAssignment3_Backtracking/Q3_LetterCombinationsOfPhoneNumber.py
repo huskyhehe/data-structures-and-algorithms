@@ -22,15 +22,15 @@ class Solution3:
             "8": "tuv",
             "9": "wxyz"}
 
-        def backtracking(start: int, comb: List[str]):
+        def backtrack(start: int, comb: List[str]) -> None:
             if len(comb) == len(digits):
                 res.append("".join(comb))
                 return
             possible_letters = letters_map[digits[start]]
             for letter in possible_letters:
                 comb.append(letter)
-                backtracking(start + 1, comb)
+                backtrack(start + 1, comb)
                 comb.pop()
 
-        backtracking(0, [])
+        backtrack(0, [])
         return res
