@@ -69,4 +69,18 @@
 - [x] [Mirror Binary Tree Nodes](https://www.educative.io/m/mirror-binary-tree-nodes)
 - [x] [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
 
+<br>
 
+## Lecture 5: Backtrack
+
+## Lecture 6: BST + Quiz1
+https://pages.cs.wisc.edu/~vernon/cs367/notes/9.BST.html
+### 6.1 Basic Concept
+- [x] [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+- [x] [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)
+- [ ] [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
+### 6.2 Basic Operations: search, insert, get_min_max, delete
+- [ ] 
+
+
+## Lecture 7: Suffix Tree, Heap
