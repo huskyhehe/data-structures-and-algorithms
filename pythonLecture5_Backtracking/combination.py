@@ -29,15 +29,19 @@ class Combination:
         # if equal to its prev, skip
 
         n = len(nums)
+        ##################################
         nums.sort()
+        ##################################
         res = []
 
         def backtrack(start, subset):
             if len(subset) <= n:
                 res.append(subset[:])
             for i in range(start, n):
+                ##################################################
                 if i > start and nums[i] == nums[i - 1]:
                     continue
+                ##################################################
                 subset.append(nums[i])
                 backtrack(i + 1, subset)
                 subset.pop()
