@@ -16,7 +16,7 @@ def backtrack(Path, Seletion List):
         deselect
 ```
 ## Subset
-The subset problem can use the idea of mathematical induction: assuming that the results of a smaller problem are known, and thinking about how to derive the results of the original problem. You can also use the backtracking algorithm, using the start parameter to exclude selected numbers.
+The subset problem can use the idea of mathematical induction: assuming that the results of a smaller problem are known, and thinking about how to derive the results of the original problem. You can also use the backtracking algorithm, using the `start` parameter to exclude selected numbers.
 
 ## Combination
 The combination problem uses the backtracking idea, and the results can be expressed as a tree structure. We only need to apply the backtracking algorithm template. The key point is to use a `start` to exclude the selected numbers.
