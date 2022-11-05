@@ -2,6 +2,31 @@
 base case
 choose - explore - un-choose
 
+## template
+```python
+result = []
+def backtrack(Path, Seletion List):
+    if meet the End Conditon:
+        result.add(Path)
+        return
+
+    for seletion in Seletion List:
+        select
+        backtrack(Path, Seletion List)
+        deselect
+```
+### subset problem
+The subset problem can use the idea of mathematical induction: assuming that the results of a smaller problem are known, and thinking about how to derive the results of the original problem. You can also use the backtracking algorithm, using the start parameter to exclude selected numbers.
+
+### combination
+The combination problem uses the backtracking idea, and the results can be expressed as a tree structure. We only need to apply the backtracking algorithm template. The key point is to use a start to exclude the selected numbers.
+
+### permutation
+The permutation problem uses the backtracking idea, and it can also be expressed as a tree structure to apply the algorithm template. The key point is to use the contains method to exclude the selected numbers. There is detailed analysis previously. Here we mainly compare it with the combination problem.
+
+#### combination VS permutation
+In the code we can see, the permutation problem uses the contains method to exclude the numbers that have been selected in track each time; while the combination problem passes a start parameter to exclude the numbers before the start index .
+
 ```java
 // Prints all possible outcomes of rolling the given
 // number of six-sided dice in {#, #, #} format.
