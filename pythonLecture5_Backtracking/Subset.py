@@ -4,7 +4,8 @@
 from typing import List
 
 
-class Combination:
+class Subset:
+    ################## The set only contains unique elements ####################
     def subsets(self, nums: List[int]) -> List[List[int]]:
 
         n = len(nums)
@@ -19,10 +20,11 @@ class Combination:
                 # pay attention to: start + 1 or i + 1?
                 backtrack(i + 1, subset)
                 subset.pop()
+
         backtrack(0, [])
         return res
 
-
+    ################## What if the set contains duplicate elements?###############
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         # what is diffrent from subsets:
         # sort the array
