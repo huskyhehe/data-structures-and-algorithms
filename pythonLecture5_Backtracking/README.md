@@ -1,4 +1,6 @@
 # Backtracking
+base case
+choose - explore - un-choose
 
 ```java
 // Prints all possible outcomes of rolling the given
