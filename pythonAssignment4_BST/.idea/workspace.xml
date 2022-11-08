@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00204b17-50e0-456d-af2c-7ada8c596493" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solution1_ValidateBST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solution2_RangeSum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solution3_InorderSuccsessor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solution4_ConvertSortedListToBST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solution5_ConvertBSTToSortedDoublyLInkedList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solution6_RecoverBST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solution7_BSTIterator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Solution8_SerializeDeserializeBST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonLecture6_BST/BST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonLecture6_BST/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonLecture6_BST/TreeNode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pythonLecture6_BST/validate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/.idea/pythonLecture6_BinarySearchTree.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/BinarySearchTree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/TreeNode.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonLecture6_BinarySearchTree/main.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HCNLoLzvErkqu0R1xStOYZPsnu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "C:/Users/ZHOU"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.Solution5_ConvertBSTToSortedDoublyLInkedList">
+    <configuration name="Solution1_ValidateBST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonAssignment4_BST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Solution1_ValidateBST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Solution5_ConvertBSTToSortedDoublyLInkedList" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonAssignment4_BST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Solution5_ConvertBSTToSortedDoublyLInkedList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Solution6_RecoverBST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonAssignment4_BST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\NEU\INFO6205\data-structures-and-algorithms\pythonAssignment4_BST\Solution6_RecoverBST.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="pythonAssignment4_BST" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Solution5_ConvertBSTToSortedDoublyLInkedList" />
+        <item itemvalue="Python.Solution6_RecoverBST" />
+        <item itemvalue="Python.Solution1_ValidateBST" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00204b17-50e0-456d-af2c-7ada8c596493" name="Changes" comment="" />
+      <created>1667785051937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667785051937</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
