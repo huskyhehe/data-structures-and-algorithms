@@ -4,7 +4,7 @@ Write a function where I pass a sorted integer array  and another array of integ
 and the function returns me start indexes of those values in second array
 """
 
-# I assumed that the index here begins with 0
+# we assumed that the index here begins with 0
 
 # Time: O(m * logn)
 # space: O(m)
