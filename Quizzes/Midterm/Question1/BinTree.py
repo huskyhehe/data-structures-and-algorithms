@@ -1,5 +1,5 @@
 """
-Question 2:
+Question 1
 In a Binary Tree, populate next left of a tree.
 """
 
@@ -12,11 +12,11 @@ class BinTree:
     def __init__(self, root=None):
         self.root = root
 
-    def populateNextLeft(self):
-        if not self.root:
+    def populateNextLeft(self, root):
+        if not root:
             return None
 
-        rightmost = self.root
+        rightmost = root
         while rightmost.right:
             head = rightmost
             while head:
@@ -25,7 +25,7 @@ class BinTree:
                     head.left.nextLeft = head.nextLeft.right
                 head = head.nextLeft
             rightmost = rightmost.left
-        return self.root
+        return root
 
 
 if __name__ == "__main__":

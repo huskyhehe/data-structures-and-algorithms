@@ -1,5 +1,5 @@
 """
-Question 4:
+Question 4
 Sorted insert in a Link list.
 """
 
