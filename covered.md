@@ -79,8 +79,20 @@ https://pages.cs.wisc.edu/~vernon/cs367/notes/9.BST.html
 - [x] [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 - [x] [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/)
 - [ ] [173. Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/)
+- [ ] [1008. Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/)
 ### 6.2 Basic Operations: search, insert, get_min_max, delete
-- [ ] 
+- [x] [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
+- [x] [701. Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
+- [x] [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
+### 6.3 dfs + hashset
+- [x] [653. Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/)
 
 
 ## Lecture 7: Suffix Tree, Heap
+
+## Lecture 8:
+## Lecture 9: Dynamic Programming
+
+## Bit Manipulation
+AND `&`, OR `|`, XOR `^`, Negation `~`  
+shift `>>` `<<`
