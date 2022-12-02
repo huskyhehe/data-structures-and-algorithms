@@ -94,5 +94,12 @@ https://pages.cs.wisc.edu/~vernon/cs367/notes/9.BST.html
 ## Lecture 9: Dynamic Programming
 
 ## Bit Manipulation
-AND `&`, OR `|`, XOR `^`, Negation `~`  
-shift `>>` `<<`
+- AND `&`, OR `|`, XOR `^`, Negation `~`  
+- shift `>>` `<<`
+### XOR
+- [x] [136. Single Number](https://leetcode.com/problems/single-number/)  
+- [x] [268. Missing Number](https://leetcode.com/problems/missing-number/)
+###
+- [x] [67. Add Binary](https://leetcode.com/problems/add-binary/)
+- [ ] 
+- [ ] 
