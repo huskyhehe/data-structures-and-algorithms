@@ -1,10 +1,18 @@
-import sys
+# [700. Search in a Binary Search Tree]
+# (https://leetcode.com/problems/search-in-a-binary-search-tree/)
+
+# [701. Insert into a Binary Search Tree]
+# (https://leetcode.com/problems/insert-into-a-binary-search-tree/)
+
+# [450. Delete Node in a BST]
+# (https://leetcode.com/problems/delete-node-in-a-bst/)
+
 from typing import Optional
 
 from TreeNode import TreeNode
 
 
-class BinaryTree:
+class BinarySearchTree:
     def __init__(self, root=None):
         self.root = root
 
@@ -22,14 +30,14 @@ class BinaryTree:
     #   2. continue searching in the left subtree if the target value is less than the value of the node;
     #   3. continue searching in the right subtree if the target value is larger than the value of the node.
     ##################################################################################################################
-    def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+    def search(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
         if not root:
             return None
         if root.val == val:
             return root
         if root.val > val:
-            return self.searchBST(root.left, val)
-        return self.searchBST(root.right, val)
+            return self.search(root.left, val)
+        return self.search(root.right, val)
 
     # insert #######################################################################################
     # The main idea is to find out a proper leaf position for the target node and then insert the node as a leaf.
@@ -37,30 +45,32 @@ class BinaryTree:
     #   2. repeat STEP 1 until reaching an external node;
     #   3. add the new node as its left or right child depending on the relation of the value of the node and the value of our target node.
     ######################################################################################################################################
-    def insertIntoBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
+    def insert(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:
         if not root:
             return TreeNode(val, None, None)
         if val > root.val:
-            root.right = self.insertIntoBST(root.right, val)
+            root.right = self.insert(root.right, val)
         else:
-            root.left = self.insertIntoBST(root.left, val)
+            root.left = self.insert(root.left, val)
         return root
 
-    # delete ###############################################################################################################
+    # delete ###########################################################################################################################
     #   1. If the target node has no child, we can simply remove the node.
     #   2. If the target node has one child, we can use its child to replace itself.
     #   3. If the target node has two children, replace the node with its in-order successor or predecessor node and delete that node.
-    #########################################################################################################################
-    def deleteNode(self, root: TreeNode, key: int) -> TreeNode:
+    # time: O(logN)
+    # space: O(H)  H: tree height, H = logN if balanced tree
+    ####################################################################################################################################
+    def delete(self, root: TreeNode, key: int) -> TreeNode:
         if not root:
             return None
 
         # delete from the right subtree
         if key > root.val:
-            root.right = self.deleteNode(root.right, key)
+            root.right = self.delete(root.right, key)
         # delete from the left subtree
         elif key < root.val:
-            root.left = self.deleteNode(root.left, key)
+            root.left = self.delete(root.left, key)
         # delete the current node
         else:
             # the node is a leaf
@@ -68,25 +78,25 @@ class BinaryTree:
                 root = None
             # the node is not a leaf and has a right child
             elif root.right:
-                root.val = self.successor(root)
-                root.right = self.deleteNode(root.right, root.val)
+                root.val = self.successor(root).val
+                root.right = self.delete(root.right, root.val)
             # the node is not a leaf, has no right child, and has a left child
             else:
-                root.val = self.predecessor(root)
-                root.left = self.deleteNode(root.left, root.val)
+                root.val = self.predecessor(root).val
+                root.left = self.delete(root.left, root.val)
 
         return root
 
     # One step right and then always left
-    def successor(self, root: TreeNode) -> int:
-            root = root.right
-            while root.left:
-                root = root.left
-            return root.val
+    def successor(self, node: TreeNode) -> TreeNode:
+            node = node.right
+            while node.left:
+                node = node.left
+            return node
 
     # One step left and then always right
-    def predecessor(self, root: TreeNode) -> int:
-        root = root.left
-        while root.right:
-            root = root.right
-        return root.val
+    def predecessor(self, node: TreeNode) -> TreeNode:
+        node = node.left
+        while node.right:
+            node = node.right
+        return node
