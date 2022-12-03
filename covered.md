@@ -92,6 +92,18 @@ https://pages.cs.wisc.edu/~vernon/cs367/notes/9.BST.html
 
 ## Lecture 8:
 ## Lecture 9: Dynamic Programming
+- Optimal substructure
+- Overlapping subproblems
+- a **state** is a set of variables that can sufficiently describe a scenario. These variables are called state variables, and we only care about relevant ones.
+- Top-down dynamic programming solutions make recursive calls according to the recurrence relation.
+- Bottom-top dynamic programming solutions strategically iterate over each state.
+
+- [x] [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) top-down with memo, bottom-up with dp array,
+- [x] [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)  top-down with memo, bottom-up with dp array
+- [x] [198. House Robber](https://leetcode.com/problems/house-robber/)  top-down with memo, bottom-up with dp array, buttom-up with optimized space
+
+
+<br>
 
 ## Bit Manipulation
 - AND `&`, OR `|`, XOR `^`, Negation `~`  
